@@ -1,0 +1,75 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background-image: url('image.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: #fff; /* Texte principal en blanc */
+}
+
+h1 {
+  text-align: center; /* Centrer le titre principal */
+  font-size: 2.5rem; /* Augmenter la taille du titre */
+  margin-top: 30px;
+}
+
+h2 {
+  color: #fff; /* Texte de sous-titre en blanc */
+  font-size: 1.5rem;
+  margin-top: 30px;
+}
+
+label {
+  color: #fff; /* Texte des labels en blanc */
+}
+
+input[type="number"], input[type="time"] {
+  width: 90%;
+  padding: 5px;
+  background-color: rgba(255, 255, 255, 0.7); /* Fond des champs d'entrée semi-transparent */
+  color: #333; /* Texte des champs en noir */
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+  background-color: rgba(0, 0, 0, 0.6); /* Fond semi-transparent pour le tableau */
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.7); /* Fond des cellules en blanc semi-transparent */
+}
+
+#totalHours, #extraHours, #missingHours {
+  color: white; /* Mettre les résultats en blanc */
+}
+
+#missingHours {
+  background-color: red; /* Couleur rouge pour les heures manquantes */
+}
+
+#extraHours {
+  background-color: green; /* Couleur verte pour les heures supplémentaires */
+}
+
+#work-0, #work-1, #work-2, #work-3, #work-4 {
+  font-weight: bold; /* Grasse les heures par jour */
+}
+
+#targetHours {
+  background-color: rgba(255, 255, 255, 0.7); /* Fond transparent du champ cible */
+  color: #333;
+}
+
+#targetHours:focus {
+  outline: 2px solid #ff6347; /* Style de bordure lors du focus */
+}
+
+p {
+  color: #fff; /* Texte des paragraphes en blanc */
+}

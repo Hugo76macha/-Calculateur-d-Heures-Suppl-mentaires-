@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Suivi des horaires</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <h1>Suivi de mes horaires</h1>
+
+  <div>
+    <label for="targetHours">Heures à travailler cette semaine :</label>
+    <input type="number" id="targetHours" value="35" min="0"> h
+  </div>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Jour</th>
+        <th>Début</th>
+        <th>Pause</th>
+        <th>Reprise</th>
+        <th>Fin</th>
+        <th>Heures travaillées</th>
+      </tr>
+    </thead>
+    <tbody id="weekTable"></tbody>
+  </table>
+
+  <h2>Résumé</h2>
+  <p>Total heures travaillées : <span id="totalHours">0</span> h</p>
+  <p>Heures supplémentaires : <span id="extraHours">0</span> h</p>
+  <p>Heures manquantes : <span id="missingHours">0</span> h</p>
+
+  <script src="./index.js"></script>
+</body>
+</html>
